@@ -1,0 +1,7 @@
+<h2>Accounts</h2>
+<div *ngIf="accountsList">
+    <div *ngFor="let accountNumber of accountsList">
+        <button (click)="selectAccount(accountNumber)">Account : {{accountNumber}}</button>
+    </div>
+
+</div>
